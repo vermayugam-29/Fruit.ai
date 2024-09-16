@@ -17,11 +17,13 @@ export default {
         'faqCustom' : '#3B5998',
         'aboutPurp' : '#FFC2F2',
         'aboutText' : '#C84AD3',
-        'homeGrad1' : '#E0BCF3',
-        'homeGrad2' : '#7EE7EE'
+        'customWhite' : '#EAEFEBCC',
+        'customRed' : '#EE0A22',
+        'blueDescription' : '#0386D0'
       },
       backgroundImage: {
         'home-gradient': 'linear-gradient(to right, #E0BCF3, #7EE7EE)',
+          
       },
     },
   },

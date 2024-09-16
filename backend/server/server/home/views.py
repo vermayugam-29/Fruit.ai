@@ -103,9 +103,11 @@ def updateFruit(request, id):
             })
         
         serializers.save()
+        data = Fruit.objects.all()
         return Response({
             'status' : 200,
             'data' : serializers.data,
+            'allData' : data,
             'message' : 'Fruit updated successfully',
             'success' : True
         })
@@ -123,8 +125,11 @@ def deleteFruit(request, id):
         fruit_data = Fruit.objects.get(id = id)
         fruit_data.delete()
 
+        data = Fruit.objects.all()
+
         return Response({
             'status' : 200,
+            'data' : data,
             'message' : 'Fruit deleted successfully',
             'success' : True
         })
